@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Survey Form</title>
+    <title>Hand Survey</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1 id="title">Survey form</h1>
+    <h1 id="title">Hand Survey</h1>
     <p id="description">This is a form for stuff</p>
     <form id="survey-form">
       <fieldset>
-        <label id="name-label" for="name">Name<input placeholder="Joe mama" id="name" type="text" required></label>
-        <label id="email-label" for="email">Email<input placeholder="place@holder.com" id="email" type="email" required></label>
-        <label id="number-label" for="number">Number of fingers<input placeholder="fingers" id="number" type="number" min="1" max="10"></label>
+        <label id="name-label" for="name">Name <input placeholder="Joe mama" id="name" type="text" required></label>
+        <label id="email-label" for="email">Email <input placeholder="place@holder.com" id="email" type="email" required></label>
+        <label id="number-label" for="number">Number of fingers <input placeholder="fingers" id="number" type="number" min="1" max="10"></label>
       </fieldset>
       <fieldset>
-        <select id="dropdown">
-          <option>nail</option>
-          <option>no nail</option>
-        </select>
+        <label> Nails?
+          <select id="dropdown">
+            <option value="nails">nails</option>
+            <option value="no-nails">no nails</option>
+          </select>
+        </label>
       </fieldset>
       <fieldset>
         <label class="inline">Cold hand<input name ="hand-temperature" type="radio"></label>
         <label class="inline">Warm hand<input name="hand-temperature" type="radio"></label>
       </fieldset>
+      <fieldset>
+        <p>Choose all that apply</p>
+        <label><input type="checkbox" value="yaoi-hand">yaoi hand</label>
+        <label><input type="checkbox" value="firm">firm</label>
+        <label><input type="checkbox" value="oily">oily</label>
+        <label><input type="checkbox" value="moist">moist</label>
+      </fieldset>
+      <fieldset>
+        <label for="hand-haiku"> Write a haiku about your hand
+          <textarea name="hand-haiku" id="hand-haiku" cols="30" rows="10" placeholder="Early dull autumn
+An other, firm hand enchants
+betrayed by the moist"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
