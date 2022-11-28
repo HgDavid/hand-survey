@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">This is a form for stuff</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name<input placeholder="Joe mama" id="name" type="text" required></label>
+        <label id="email-label" for="email">Email<input placeholder="place@holder.com" id="email" type="email" required></label>
+        <label id="number-label" for="number">Number of fingers<input placeholder="fingers" id="number" type="number" min="1" max="10"></label>
+      </fieldset>
+      <fieldset>
+        <select id="dropdown">
+          <option>nail</option>
+          <option>no nail</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label class="inline">Cold hand<input name ="hand-temperature" type="radio"></label>
+        <label class="inline">Warm hand<input name="hand-temperature" type="radio"></label>
+      </fieldset>
+    </form>
+  </body>
+</html>
