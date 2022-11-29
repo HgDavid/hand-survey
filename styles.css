@@ -1,5 +1,6 @@
 body {
-  background-color: #9b97b8;
+  background-color: #1c0e1d;
+  color: #cac271;
 }
 
 h1, p {
@@ -12,5 +13,18 @@ label {
 
 fieldset {
   border: none;
+}
+
+input, textarea, select {
+  width: 100%;
+}
+
+input, textarea {
+  background-color: #9d99bc;
+  border-color: #9d99bc;
+}
+
+.inline {
+  width: unset;
 }
 
